@@ -1,4 +1,5 @@
-              HELLO!
+HELLO!
+========
               
 This file should help you install the Ibasam package on your machine.
 
@@ -17,7 +18,7 @@ Below are are the steps for:
    2) a linux installation
 Sorry for the others...
 
-=============================================
+
 1. Windows installation (tested with Win7 and WinXP)
 =============================================
 
@@ -39,7 +40,7 @@ II. Steps for installation
       
 
 
-=============================================
+
 2. Linux installation (tested with Ubuntu 14.04)
 =============================================
 
