@@ -13,7 +13,7 @@ Contents of the folder:
   *R* folder : R codes to interface with the dynamic library  
   *man* folder : R documentation (unfinished)  
 
-Below are are the steps for:  
+Below are the steps for:  
 1. a windows installation              
 2. a linux installation
 
@@ -86,7 +86,7 @@ II. Steps for installation
 If you still have problems, write to me.
 
       
-Hope you'll enjoy,
+Hope you'll enjoy,  
 Cyril Piou
 
 piou.cyril< at < yahoo.fr
