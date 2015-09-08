@@ -8,10 +8,10 @@ Contents of the zip:
 - helper file for windows installation (do the II. steps automatically, remove the ~in the name)  
 - helper file for linux installation (do the II. steps automatically)  
 - an Ibasam folder that contains:  
-  src folder : C++ codes of the model  
-  data folder : data used in the model  
-  R folder : R codes to interface with the dynamic library  
-  man folder : R documentation (unfinished)  
+  *src* folder : C++ codes of the model  
+  *data* folder : data used in the model  
+  *R* folder : R codes to interface with the dynamic library  
+  *man* folder : R documentation (unfinished)  
 
 Below are are the steps for:  
 1. a windows installation              
@@ -51,19 +51,31 @@ If you still have problems, write to me.
 
 I. Pre-required:  
 ----
-  a) R installed 
-    ( sudo sudo apt-get update 
-      sudo apt-get install r-base 
-      sudo apt-get install r-base-dev )
+  a) R installed  
+  
+  ````
+  
+    sudo sudo apt-get update
+       
+    sudo apt-get install r-base
+       
+    sudo apt-get install r-base-dev  
+ ```
+ 
+    
   b) Download and unzip Boost (in my case it was located at /home/piou/boost)
 
 II. Steps for installation
 ---
   a) allow the G++ compiler to find the place where the boost folder is (typically inside a boost_1_NN_N folder) either by modifying the Ibasam/src/Makevars file in giving the place (and eventual boost version) where you unziped boost  
   b) open a terminal and go on the parent folder of Ibasam (e.g. your documents folder)  
-  c) run the following command on the console: R CMD build Ibasam  
+  c) run the following command on the console: 
+  ````R CMD build Ibasam ````
+   
   d) check that the Ibasam_2.3.0.tar.gz file was created  
-  e) run the following command on the console: R CMD INSTALL Ibasam_2.3.0.tar.gz  
+  e) run the following command on the console: 
+  ````R CMD INSTALL Ibasam_2.3.0.tar.gz ````
+   
   f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your adminstrative rights. 
   
 If you still have problems, write to me.
