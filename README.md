@@ -20,8 +20,10 @@ Below are are the steps for:
 Sorry for the others...
 
 
-1. Windows installation (tested with Win7 and WinXP)
+1. Windows installation
 =============================================
+
+**Tested with Win7 and WinXP**
 
 I. Pre-required:
 ---
@@ -46,8 +48,11 @@ If you still have problems, write to me.
 
 
 
-2. Linux installation (tested with Ubuntu 14.04)
+2. Linux installation
 =============================================
+
+ **Tested with Ubuntu 14.04**
+ 
 
 I. Pre-required:  
 ----
