@@ -45,7 +45,7 @@ Salmon::Salmon(double W, double F, double lwa, double lwb,double lwa_sea, double
 	myGenes_=genes;
 	gPercF_ = myGenes_.gPercF();//here already the invlogit value --> percentage
 	gG_= myGenes_.gG();//here the raw value --> (-oo +oo) -->need exp for [0 +oo)
-	gG_sea_=myGenes_.gG();//edit Julien Papaix to have only one genetic growth effect
+	gG_sea_=myGenes_.gG_sea();//undo the 'edit Julien Papaix to have only one genetic growth effect' because it is not called for pG_sea anyway if tradeoff is on
 	gSLmid_=myGenes_.gSLmid();
 	galphaS_=myGenes_.gSalphaS();
 	gFmid_[0]=myGenes_.gMriver_intercept();
@@ -54,7 +54,7 @@ Salmon::Salmon(double W, double F, double lwa, double lwb,double lwa_sea, double
 	gFmid_[3]=myGenes_.gMocean_f_intercept();
 	pPercF_ = myGenes_.pPercF();//here already the invlogit value --> percentage
 	pG_= myGenes_.pG();//here the raw value --> (-oo +oo) -->need exp for [0 +oo)
-	pG_sea_=myGenes_.pG();//edit Julien Papaix to have only one genetic growth effect but a different pG_ to pG_sea_
+	pG_sea_=myGenes_.pG_sea();//undo the 'edit Julien Papaix to have only one genetic growth effect but a different pG_ to pG_sea_' because it is going to be changed below if tradeoff is on
 	pSLmid_=myGenes_.pSLmid();
 	palphaS_=myGenes_.pSalphaS();
 	pFmid_[0]=myGenes_.pMriver_intercept();
@@ -94,27 +94,50 @@ Salmon::Salmon(double W, double F, double lwa, double lwb,double lwa_sea, double
 	myassert(b_allom_!=0.);
 	//edit Julien Papaix, parameters and computation of individual penalty for 
 	//survival depending on growth capacity pG_ and pG_sea_:
-	maxRIV_=maxRIV; 
-	sigRIV_=sigRIV; 
-	kappaRIV_=kappaRIV; 
-	pGres_=exp(pG_)/maxRIV_;
-	if(pGres_>1.)
+	
+	//river tradeoff:
+	if(maxRIV>0.)
 	{
-		pGres_=1.;
+		maxRIV_=maxRIV; 
+		sigRIV_=sigRIV; 
+		kappaRIV_=kappaRIV; 
+		pGres_=exp(pG_)/maxRIV_;
+		if(pGres_>1.)
+		{
+			pGres_=1.;
+		}
+		coefSURV_=(exp(-kappaRIV_*pow(pGres_,sigRIV_))-exp(-kappaRIV_))/(1.-exp(-kappaRIV_));
+	}else{
+		maxRIV_=maxRIV; 
+		sigRIV_=sigRIV; 
+		kappaRIV_=kappaRIV; 
+		pGres_=0;
+		coefSURV_=1.;
 	}
-	coefSURV_=(exp(-kappaRIV_*pow(pGres_,sigRIV_))-exp(-kappaRIV_))/(1.-exp(-kappaRIV_));
-	maxSEA_=maxSEA; 
-	sigSEA_=sigSEA; 
-	kappaSEA_=kappaSEA; 
-	pG_seares_=(exp(pG_sea_))/maxSEA_;
-	if(pG_seares_>1.) 
-	{
-		pG_seares_=1.;
+	myassert(coefSURV_>0. && coefSURV_<=1.);
+	
+	//Sea tradeoff:
+	if(maxSEA>0.){
+		pG_sea_=myGenes_.pG();//when the tradeoff is touching sea survival, the genetic growth capacity at sea is supposed to be entirely correlated to the river one.
+		maxSEA_=maxSEA; 
+		sigSEA_=sigSEA; 
+		kappaSEA_=kappaSEA; 
+		pG_seares_=(exp(pG_sea_))/maxSEA_;
+		if(pG_seares_>1.) 
+		{
+			pG_seares_=1.;
+		}
+		coefSURVsea_=(exp(-kappaSEA_*pow(pG_seares_,sigSEA_))-exp(-kappaSEA_))/(1.-exp(-kappaSEA_));
+	}else{
+		maxSEA_=maxSEA; 
+		sigSEA_=sigSEA; 
+		kappaSEA_=kappaSEA; 
+		pG_seares_=0.;
+		coefSURVsea_=1.;
 	}
-	coefSURVsea_=(exp(-kappaSEA_*pow(pG_seares_,sigSEA_))-exp(-kappaSEA_))/(1.-exp(-kappaSEA_));
-	myassert(coefSURV_>0. && coefSURV_<=1.); //added C. Piou
-	myassert(coefSURVsea_>0. && coefSURVsea_<=1.); //added C. Piou
+	myassert(coefSURVsea_>0. && coefSURVsea_<=1.); 
 	//end edit Julien Papaix
+	
 	IDs++;
 	ID_ = IDs;
 	myGenes_.updateID(ID_);//,motherID,fatherID);
