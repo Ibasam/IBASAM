@@ -3,7 +3,7 @@ HELLO!
               
 This file should help you install the Ibasam package on your machine.
 
-Contents of the zip:  
+Contents of the folder:  
 - this file  
 - helper file for windows installation (do the II. steps automatically, remove the ~in the name)  
 - helper file for linux installation (do the II. steps automatically)  
@@ -53,13 +53,13 @@ I. Pre-required:
 ----
   a) R installed  
   
-  ````
+  ```
   
-    sudo sudo apt-get update
-       
-    sudo apt-get install r-base
-       
-    sudo apt-get install r-base-dev  
+  sudo sudo apt-get update
+  
+  sudo apt-get install r-base
+  
+  sudo apt-get install r-base-dev  
  ```
  
     
