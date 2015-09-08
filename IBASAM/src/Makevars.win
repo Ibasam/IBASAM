@@ -1,0 +1,1 @@
+PKG_CXXFLAGS = -I"C:/Program Files (x86)/boost/boost_1_59_0"

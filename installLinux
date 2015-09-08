@@ -1,0 +1,3 @@
+gedit IBASAM/src/Makevars
+R CMD build Ibasam
+sudo R CMD INSTALL Ibasam_2.3.0.tar.gz

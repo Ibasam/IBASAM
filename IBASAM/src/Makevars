@@ -1,0 +1,1 @@
+PKG_CXXFLAGS = -I"/home/cyril/boost/boost_1_59_0/"
