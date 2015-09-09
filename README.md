@@ -5,7 +5,7 @@ This file should help you install the Ibasam package on your machine.
 
 Contents of the folder:  
 - this file  
-- helper file for windows installation (do the II. steps automatically, remove the ~in the name)  
+- helper file for windows installation (do the II. steps automatically)  
 - helper file for linux installation (do the II. steps automatically)  
 - an Ibasam folder that contains:  
   *src* folder : C++ codes of the model  
