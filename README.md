@@ -92,8 +92,8 @@ Cyril Piou
 piou.cyril< at < yahoo.fr
   
 
-III. Literature
----
+Literature
+=======
 
 Piou, C.; Taylor, M.H.; Papaïx, J.; Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, online first. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
 
