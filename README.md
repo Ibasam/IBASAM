@@ -95,3 +95,12 @@ Cyril Piou
 
 piou.cyril< at < yahoo.fr
   
+
+III. Literature
+---
+
+Piou, C.; Taylor, M.H.; Papaïx, J.; Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, online first.
+
+Piou, C.; Prévost, E. (2013). Contrasting effects of climate change in continental vs. oceanic environments on population persistence and microevolution of Atlantic salmon. *Global Change Biology*, 19 (3) : 711-723.
+
+Piou, C. & Prévost, E. (2012) A demo-genetic individual-based model for Atlantic salmon populations: Model structure, parameterization and sensitivity. *Ecological Modelling*, 231, 37–52.
