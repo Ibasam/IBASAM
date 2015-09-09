@@ -38,10 +38,12 @@ II. Steps for installation
       i) copying the boost folder into the include directory of you MinGW distribution (I know it's brutal but avoid so many troubles when using different IDEs)  
       ii) modify the Ibasam/src/Makevars.win file in giving the place (and eventual boost version) where you unziped boost  
   b) open a Console and go on the parent folder of Ibasam (e.g. your documents folder)  
-  c) run the following command on the console: R CMD build Ibasam  
+  c) run the following command on the console: 
+  ```R CMD build Ibasam ```  
   d) check that the Ibasam_2.3.0.tar.gz file was created  
-  e) run the following command on the console: R CMD INSTALL Ibasam_2.3.0.tar.gz  
-  f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your adminstrative rights (to change them, run the console as administrator). 
+  e) run the following command on the console: 
+  ```R CMD INSTALL Ibasam_2.3.0.tar.gz ```  
+  f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your administrative rights (to change them, run the console as administrator). 
   
 If you still have problems, write to me.
       
@@ -75,13 +77,13 @@ II. Steps for installation
   a) allow the G++ compiler to find the place where the boost folder is (typically inside a boost_1_NN_N folder) either by modifying the Ibasam/src/Makevars file in giving the place (and eventual boost version) where you unziped boost  
   b) open a terminal and go on the parent folder of Ibasam (e.g. your documents folder)  
   c) run the following command on the console: 
-  ````R CMD build Ibasam ````
+  ```R CMD build Ibasam ```
    
   d) check that the Ibasam_2.3.0.tar.gz file was created  
   e) run the following command on the console: 
-  ````R CMD INSTALL Ibasam_2.3.0.tar.gz ````
+  ```R CMD INSTALL Ibasam_2.3.0.tar.gz ```
    
-  f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your adminstrative rights. 
+  f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your administrative rights. 
   
 If you still have problems, write to me.
 
