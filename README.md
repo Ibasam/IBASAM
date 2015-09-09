@@ -29,7 +29,7 @@ I. Pre-required:
 ---
   a) R installed (32bit and/or 64bit)  
   b) R binaries on the "path" (see http://en.wikipedia.org/wiki/Environment_variable if really you have no ideas what is your "path")  
-  c) Download and unzip Boost (http://www.boost.org/) to something like "c:/Program Files (x86)/boost"   
+  c) Download and unzip Boost to something like "c:/Program Files (x86)/boost"   
   d) Rtools installed and MinGW correctly accessible in the "path" (see https://cran.r-project.org/bin/windows/Rtools/) 
 
 II. Steps for installation
@@ -68,15 +68,11 @@ I. Pre-required:
  ```
  
     
-  b) Install Boost (http://www.boost.org/):
-  ```sudo apt-get install libboost-all-dev ```
-  or download and unzip the Boost library (in my case it was located at /home/piou/boost)
+  b) Download and unzip Boost (in my case it was located at /home/piou/boost)
 
 II. Steps for installation
 ---
-  a) allow the G++ compiler to find the place where the boost folder is (typically inside a boost_1_NN_N folder) either by 
-		i)  having it installed right into the /usr/include directly
-		ii) modifying the Ibasam/src/Makevars file in giving the place (and eventual boost version) where you unziped boost
+  a) allow the G++ compiler to find the place where the boost folder is (typically inside a boost_1_NN_N folder) either by modifying the Ibasam/src/Makevars file in giving the place (and eventual boost version) where you unziped boost  
   b) open a terminal and go on the parent folder of Ibasam (e.g. your documents folder)  
   c) run the following command on the console: 
   ````R CMD build Ibasam ````
@@ -85,7 +81,7 @@ II. Steps for installation
   e) run the following command on the console: 
   ````R CMD INSTALL Ibasam_2.3.0.tar.gz ````
    
-  f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.so, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your adminstrative rights. 
+  f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-b again and and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your adminstrative rights. 
   
 If you still have problems, write to me.
 
@@ -99,8 +95,8 @@ piou.cyril< at < yahoo.fr
 III. Literature
 ---
 
-Piou, C.; Taylor, M.H.; Papaïx, J.; Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, online first.
+Piou, C.; Taylor, M.H.; Papaïx, J.; Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, online first. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
 
-Piou, C.; Prévost, E. (2013). Contrasting effects of climate change in continental vs. oceanic environments on population persistence and microevolution of Atlantic salmon. *Global Change Biology*, 19 (3) : 711-723.
+Piou, C.; Prévost, E. (2013). Contrasting effects of climate change in continental vs. oceanic environments on population persistence and microevolution of Atlantic salmon. *Global Change Biology*, 19 (3) : 711-723. [Link](http://onlinelibrary.wiley.com/doi/10.1111/gcb.12085/abstract)
 
-Piou, C. & Prévost, E. (2012) A demo-genetic individual-based model for Atlantic salmon populations: Model structure, parameterization and sensitivity. *Ecological Modelling*, 231, 37–52.
+Piou, C. & Prévost, E. (2012) A demo-genetic individual-based model for Atlantic salmon populations: Model structure, parameterization and sensitivity. *Ecological Modelling*, 231, 37–52. [Link](http://www.sciencedirect.com/science/article/pii/S0304380012000543)
