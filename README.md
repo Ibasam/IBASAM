@@ -41,8 +41,8 @@ I. Pre-required:
 II. Steps for installation
 ---
   a) allow the G++ compiler to find the place where the boost folder is (typically inside a boost_1_NN_N folder) either by:   
-      i) copying the boost folder into the include directory of you MinGW distribution (I know it's brutal but avoid so many troubles when using different IDEs)  
-      ii) modify the Ibasam/src/Makevars.win file in giving the place (and eventual boost version) where you unziped boost  
+      - copying the boost folder into the include directory of you MinGW distribution (I know it's brutal but avoid so many troubles when using different IDEs)  
+      - modifying the Ibasam/src/Makevars.win file in giving the place (and eventual boost version) where you unziped boost  
   b) open a Console and go on the parent folder of Ibasam (e.g. your documents folder)  
   c) run the following command on the console: 
   ```R CMD build Ibasam ```  
@@ -80,8 +80,8 @@ I. Pre-required:
 II. Steps for installation
 ---
   a) allow the G++ compiler to find the place where the boost folder is (typically inside a boost_1_NN_N folder) either by 
-		i)  having it installed right into the /usr/include directly
-		ii) modifying the Ibasam/src/Makevars file in giving the place (and eventual boost version) where you unziped boost 
+		- having it installed right into the /usr/include directly
+		- modifying the Ibasam/src/Makevars file in giving the place (and eventual boost version) where you unziped boost 
   b) open a terminal and go on the parent folder of Ibasam (e.g. your documents folder)  
   c) run the following command on the console: 
   ```R CMD build Ibasam ```
