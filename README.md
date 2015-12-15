@@ -97,8 +97,8 @@ II. Steps for installation
 3. Literature
 =============================================
 
-Piou, C.; Taylor, M.H.; Papaïx, J.; Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, online first. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
+Piou, C., Taylor, M. H., Papaïx, J., & Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, 52(6), 1629-1637. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
 
-Piou, C.; Prévost, E. (2013). Contrasting effects of climate change in continental vs. oceanic environments on population persistence and microevolution of Atlantic salmon. *Global Change Biology*, 19 (3) : 711-723. [Link](http://onlinelibrary.wiley.com/doi/10.1111/gcb.12085/abstract)
+Piou, C., Prévost, E. (2013). Contrasting effects of climate change in continental vs. oceanic environments on population persistence and microevolution of Atlantic salmon. *Global Change Biology*, 19 (3) : 711-723. [Link](http://onlinelibrary.wiley.com/doi/10.1111/gcb.12085/abstract)
 
 Piou, C. & Prévost, E. (2012) A demo-genetic individual-based model for Atlantic salmon populations: Model structure, parameterization and sensitivity. *Ecological Modelling*, 231, 37–52. [Link](http://www.sciencedirect.com/science/article/pii/S0304380012000543)
