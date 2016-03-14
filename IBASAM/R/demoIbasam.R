@@ -1,10 +1,10 @@
 demoIbasam <-
-function (nYears, plotting = TRUE, window = FALSE, returning = FALSE, 
+function (nYears, CC_Temp=0, CC_Amp=1.00, plotting = TRUE, window = FALSE, returning = FALSE, 
     success = TRUE, empty = TRUE) 
 {
     empty()
     def <- defaultParameters()
-    mm <- random_Scorff_river(nYears + 1)
+    mm <- river_climate_model(nYears + 1)
     Reset_environment()
     Prepare_environment_vectors(mm$temperatures, mm$logrelflow)
     setup_environment_parameters(def$envParam)
