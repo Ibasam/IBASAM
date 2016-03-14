@@ -1,10 +1,10 @@
 demoIbasam <-
-function (nYears, CC_Temp=0, CC_Amp=1.00, plotting = TRUE, window = FALSE, returning = FALSE, 
+function (nYears, CC_Temp, CC_Amp, plotting = TRUE, window = FALSE, returning = FALSE, 
     success = TRUE, empty = TRUE) 
 {
     empty()
     def <- defaultParameters()
-    mm <- river_climate_model(nYears + 1)
+    mm <- river_climate_model(nYears + 1, CC_Temp, CC_Amp)
     Reset_environment()
     Prepare_environment_vectors(mm$temperatures, mm$logrelflow)
     setup_environment_parameters(def$envParam)
@@ -67,7 +67,7 @@ function (nYears, CC_Temp=0, CC_Amp=1.00, plotting = TRUE, window = FALSE, retur
         par(op)
     }
     if (returning) {
-        return(results)
+        return(list(results,mm))
     }
     else {
         invisible(NULL)

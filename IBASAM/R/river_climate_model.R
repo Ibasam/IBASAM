@@ -1,8 +1,11 @@
-river_climate_model <- function (nYears, CC_Temp=0, CC_Amp=1.00) 
+river_climate_model <- function (nYears, CC_Temp, CC_Amp) 
 {
   #Scorff parameters T°C:        ADJUSTED on 1970-2007 data from Scorff 5/03/2010
-    #mT <- 12.674299
+  if(missing(CC_Temp)) {
+    mT <- 12.674299
+  } else {
     mT<-seq(12.674299,12.674299+ CC_Temp,length=365*nYears)  #MeanT
+  }
     aT <- 5.909091
     csT <- 114.780948
     alpT <- 0.95184170929478
@@ -10,8 +13,11 @@ river_climate_model <- function (nYears, CC_Temp=0, CC_Amp=1.00)
 
   #Scorff parameters Flow:      ADJUSTED on 1970-2007 data from Scorff 5/03/2010
     mF <- -0.02
-    #aF <- 1.010139
+    if(missing(CC_Amp)) {
+      aF <- 1.010139
+    } else {
     aF <- seq(1.010139,1.010139* CC_Amp,length=365*nYears)
+    }
     csF <- 327.836285
     alpF <- 0.964034622660953
     betF <- 0.118343974744226
