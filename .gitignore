@@ -1,0 +1,107 @@
+# Folders #
+###########
+/results
+/outputs
+/scratch
+/Steelhead
+/R
+/doc
+/AgeAtMaturity/*
+/CCvsFisheries/*
+/v2.3
+/v2.3.1
+/v2.3.2
+/ClimateChange
+/MetaIBASAM
+/docs
+
+
+# Backup files #
+################
+**/*~
+
+# Binary files #
+################
+*.pdf
+*.png
+*.jpg
+*.pptx
+*.ppt
+*.doc
+*.docx
+*.odt
+*.ods
+*.xls
+*.xlsx
+
+# images
+*.jpg
+*.gif
+*.png
+*.svg
+*.ico
+*.eps
+*.ps
+
+# Videos
+*.wmv
+*.mpg
+*.mpeg
+*.mp4
+*.mov
+*.flv
+*.avi
+*.ogv
+*.ogg
+*.webm
+
+# R project source #
+###################
+.Rproj.user
+.Rhistory
+*.RData
+*.Rdata
+*.Rproj
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+#*.sql
+*.sqlite
+*.db
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional things
+*.sublime-project
+*.sublime-workspace
