@@ -26,7 +26,7 @@ piou.cyril< at < yahoo.fr
 
 
 
-1. Windows installation
+1. Windows installation  
 =============================================
 
 **Tested with Win7 64bit and WinXP 32bit**
@@ -47,9 +47,9 @@ II. Steps for installation
   b) open a Console and go on the parent folder of Ibasam (e.g. your documents folder)  
   c) run the following command on the console: 
   ```R CMD build Ibasam ```  
-  d) check that the Ibasam_2.3.0.tar.gz file was created  
+  d) check that the Ibasam_2.3.1.tar.gz file was created  
   e) run the following command on the console: 
-  ```R CMD INSTALL Ibasam_2.3.0.tar.gz ```  
+  ```R CMD INSTALL Ibasam_2.3.1.tar.gz ```  
   f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-a again and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your administrative rights (to change them, run the console as administrator).  
 
 
@@ -90,13 +90,13 @@ II. Steps for installation
    
   d) check that the Ibasam_2.3.0.tar.gz file was created  
   e) run the following command on the console: 
-  ```R CMD INSTALL Ibasam_2.3.0.tar.gz ```
+  ```R CMD INSTALL Ibasam_2.3.1.tar.gz ```
    
   f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-a again and and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.so, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your administrative rights. 
   
   
 
-3. Literature
+3. Literature  
 =============================================
 
 Piou, C., Taylor, M. H., Papaïx, J., & Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, 52(6), 1629-1637. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
