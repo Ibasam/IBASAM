@@ -3,18 +3,10 @@
 /results
 /outputs
 /scratch
-/Steelhead
 /R
 /doc
-/AgeAtMaturity/*
-/CCvsFisheries/*
-/v2.3
-/v2.3.1
-/v2.3.2
-/ClimateChange
-/MetaIBASAM
-/docs
-/version
+
+.gitignore
 
 # Backup files #
 ################
