@@ -2,5 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-.gz
-.Rproj
+*.gz
+*.Rproj
+.DS_Store
