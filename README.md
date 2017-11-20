@@ -16,20 +16,11 @@ The IBASAM model was developed in C++ and interfaced as a shared library for R (
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
 Contents of the folder:  
-- this file  
-- helper file for windows installation (do the II. steps automatically)  
-- helper file for linux installation (do the II. steps automatically)  
-- an Ibasam folder that contains:  
-  *src* folder : C++ codes of the model  
-  *data* folder : data used in the model  
-  *R* folder : R codes to interface with the dynamic library  
-  *man* folder : R documentation (unfinished)  
 
 
   
-  
 
-3. Literature  
+Literature  
 =============================================
 
 Piou, C., Taylor, M. H., Papaïx, J., & Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, 52(6), 1629-1637. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
