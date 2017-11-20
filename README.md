@@ -1,4 +1,4 @@
-HELLO!
+A demo-genetic individual-based model for Atlantic salmon populations
 ========
            
            
