@@ -1,7 +1,4 @@
-A demo-genetic individual-based model for Atlantic salmon populations
-========
-           
-           
+         
 <img width="630" alt="ibasam" src="https://user-images.githubusercontent.com/14179200/33024686-0efb54d8-ce0c-11e7-957f-a956b12cbcf7.png">
        
  
@@ -22,6 +19,7 @@ The IBASAM model was developed in C++ and interfaced as a shared library for R (
 The integration into IBASAM of a demo-genetic structure coupled with the explicit representation of individual variability and complex life histories makes it a cohesive and novel tool to assess the effect of potential stressors on evolutionary demography of Atlantic salmon in further studies.
 
 - How to contribute to IBASAM?
+
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
 
