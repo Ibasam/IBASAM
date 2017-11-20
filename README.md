@@ -10,9 +10,9 @@ The integration into IBASAM of a demo-genetic struc- ture coupled with the expli
 
 The IBASAM model was developed in C++ and interfaced as a shared library for R (R Development Core, 2010) to make easy the statistical analyses of model outputs. The C++ source codes and R scripts to create and use the model as R package are available online on Github.
 
-[Contents of the folder](./contents.md)
+[Contents of the folder](docs/contents.md)
 
-[Installation procedure](./installation.md)
+[Installation procedure](docs/installation.md)
 
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
