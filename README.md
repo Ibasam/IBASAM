@@ -1,6 +1,11 @@
 HELLO!
 ========
-              
+           
+           
+<img width="630" alt="ibasam" src="https://user-images.githubusercontent.com/14179200/33024686-0efb54d8-ce0c-11e7-957f-a956b12cbcf7.png">
+       
+           
+           
 Contents of the folder:  
 - this file  
 - helper file for windows installation (do the II. steps automatically)  
