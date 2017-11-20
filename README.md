@@ -20,8 +20,8 @@ IBASAM is made of 8 submodels representing fundamental biological processes :
 8. Migrations
 
 It also includes 2 environmental submodels :  
-10. River climate submodel
-11. Ocean climate submodel
+10. River climate (Water temperature and flow)
+11. Ocean climate
 
 For the sake of conciseness, all submodels are not extensively justified here. Please see Piou et al. (2012) for further explanations and graphics of some of the mathematical functions used.
 
