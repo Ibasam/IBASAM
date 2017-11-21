@@ -23,17 +23,17 @@ It also includes 2 environmental submodels :
 10. River climate (Water temperature and flow)
 11. Ocean climate
 
-For the sake of conciseness, all submodels are not extensively justified here. Please see Piou et al. (2012) for further explanations and graphics of some of the mathematical functions used.
+For the sake of conciseness, all submodels are not extensively justified here. Please see [Wiki](https://github.com/Ibasam/IBASAM/wiki) and Piou et al. (2012) for further explanations and graphics of some of the mathematical functions used.
 
 - **How to use IBASAM?**
 
-The IBASAM model was developed in C++ and interfaced as a shared library for R (R Development Core, 2010) to make easy the statistical analyses of model outputs. The C++ source codes and R scripts to create and use the model as R package are available online on Github.
+The IBASAM model was developed in C++ and interfaced as a shared library for R (R Development Core, 2010) to make easy the statistical analyses of model outputs. The C++ source codes and R scripts to create and use the model as R package are available online on Github. More detailed explanations are provided in the [Wiki](https://github.com/Ibasam/IBASAM/wiki).
 
 [Installation procedure](docs/installation.md)
 
 - **What is IBASAM’ goal?**
 
-The integration into IBASAM of a demo-genetic structure coupled with the explicit representation of individual variability and complex life histories makes it a cohesive and novel tool to assess the effect of potential stressors on evolutionary demography of Atlantic salmon in further studies.
+IBASAM is a cohesive and novel tool to assess the effect of potential stressors on evolutionary demography of Atlantic salmon. It includes a demo-genetic structure coupled with the explicit representation of individual variability and complex life histories.
 
 - **How to contribute to IBASAM?**  
 
@@ -45,7 +45,7 @@ The integration into IBASAM of a demo-genetic structure coupled with the explici
 
 
 
-Literature  
+References  
 =============================================
 
 Piou, C., Taylor, M. H., Papaïx, J., & Prévost, E. (2015). Modelling the interactive effects of selective fishing and environmental change on Atlantic salmon demogenetics. *Journal of Applied Ecology*, 52(6), 1629-1637. [Link](http://onlinelibrary.wiley.com/doi/10.1111/1365-2664.12512/abstract)
