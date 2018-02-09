@@ -9,7 +9,7 @@ If you still have problems for the installation, write to me.
 Hope you'll enjoy,  
 Cyril Piou
 
-piou.cyril< at < yahoo.fr
+cyril.piou< at < cirad.fr
 
 
 
@@ -34,9 +34,9 @@ II. Steps for installation
   b) open a Console and go on the parent folder of Ibasam (e.g. your documents folder)  
   c) run the following command on the console: 
   ```R CMD build Ibasam ```  
-  d) check that the Ibasam_2.3.1.tar.gz file was created  
+  d) check that the Ibasam_2.3.2.tar.gz file was created  
   e) run the following command on the console: 
-  ```R CMD INSTALL Ibasam_2.3.1.tar.gz ```  
+  ```R CMD INSTALL Ibasam_2.3.2.tar.gz ```  
   f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-a again and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.dll, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your administrative rights (to change them, run the console as administrator).  
 
 
@@ -75,8 +75,8 @@ II. Steps for installation
   c) run the following command on the console: 
   ```R CMD build Ibasam ```
    
-  d) check that the Ibasam_2.3.0.tar.gz file was created  
+  d) check that the Ibasam_2.3.2.tar.gz file was created  
   e) run the following command on the console: 
-  ```R CMD INSTALL Ibasam_2.3.1.tar.gz ```
+  ```R CMD INSTALL Ibasam_2.3.2.tar.gz ```
    
   f) if you have an error message about dynamic_bitset of boost, it is because the compiler did not find boost, check the step II-a again and and redo the following steps. If you have an error of installation of the package after compilation of the Ibasam.so, check that R is finding the library path correctly and has installed Ibasam in the default folder, maybe then the problem is your administrative rights. 

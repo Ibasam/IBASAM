@@ -16,7 +16,7 @@
  *
  *  Any questions or remarks, please contact Cyril Piou at:
  *
- *  piou.cyril<at>yahoo.fr
+ *  cyril.piou<at>cirad.fr
  *
  */
 
