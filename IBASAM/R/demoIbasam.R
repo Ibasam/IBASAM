@@ -1,5 +1,5 @@
 demoIbasam <-
-function (nYears, CC_Temp, CC_Amp, plotting = TRUE, window = FALSE, returning = FALSE, 
+function (nYears, CC_Temp, CC_Amp, fisheries= TRUE, plotting = TRUE, window = FALSE, returning = FALSE, 
     success = TRUE, empty = TRUE) 
 {
     empty()
@@ -31,10 +31,18 @@ function (nYears, CC_Temp, CC_Amp, plotting = TRUE, window = FALSE, returning = 
         ptm <- proc.time()
         spring()
         summer()
-        popo <- observe()
-        if (returning || success) {
-            results <- rbind(results, popo)
+        
+        #### FISHING ####
+        #popo <- observe() # state BEFORE fisheries
+        if (fisheries) {
+          fishing(c(0.15, 0.15))
         }
+        
+        popo <- observe() # state AFTER fisheries        
+        if (returning || success) {
+          results <- rbind(results, popo)
+        }
+        
         ratios[y, ] <- unlist(proportions.population(popo))
         summerM[y, ] <- unlist(important.indicator.summer.population(popo))
         autumn()
