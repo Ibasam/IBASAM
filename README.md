@@ -12,9 +12,9 @@ More detailed explanations (processes, installation procedure,...), are provided
 
 # Contributors
 [Cyril Piou](http://agents.cirad.fr/index.php/cyril.piou) (CIRAD, CBGP, Montpellier). 
-[Mathieu Buoro](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle). 
-[Etienne Prévost](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle). 
-[Julien Papaïx](https://informatique-mia.inra.fr/biosp/trombinoscope) (INRA, Biosp, Avignon). 
+[Mathieu Buoro](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle).   
+[Etienne Prévost](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle).  
+[Julien Papaïx](https://informatique-mia.inra.fr/biosp/trombinoscope) (INRA, Biosp, Avignon).  
 
 # Sponsor
 This work is financed under the [AFB](https://www.afbiodiversite.fr)-INRA conventions. 
