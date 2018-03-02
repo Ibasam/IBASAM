@@ -11,7 +11,7 @@ IBASAM is a cohesive and novel tool to assess the effect of potential stressors 
 More detailed explanations (processes, installation procedure,...), are provided in the [Wiki](https://github.com/Ibasam/IBASAM/wiki).
 
 # Contributors
-[Cyril Piou](http://agents.cirad.fr/index.php/cyril.piou) (CIRAD, CBGP, Montpellier). 
+[Cyril Piou](http://agents.cirad.fr/index.php/cyril.piou) (CIRAD, CBGP, Montpellier).  
 [Mathieu Buoro](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle).   
 [Etienne Prévost](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle).  
 [Julien Papaïx](https://informatique-mia.inra.fr/biosp/trombinoscope) (INRA, Biosp, Avignon).  
