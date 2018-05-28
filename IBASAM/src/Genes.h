@@ -54,8 +54,8 @@ public:
 	double gG_sea(){return gG_sea_.expression();};
 	double gSLmid(){return gSLmid_.expression();};
 	double gSalphaS(){return gSalphaS_.expression();};
-	double gMocean_intercept(){return gMocean_intercept_.expression();};
-	double gMocean_f_intercept(){return gMocean_f_intercept_.expression();};
+	double gMocean_intercept(){return gMocean_intercept_.expression();};  // TODO: add a MajorLocus influence to the expression (biallelic 1 locus effet dominance sex dependant)
+	double gMocean_f_intercept(){return gMocean_f_intercept_.expression();}; //TODO: idem
 	double gMriver_intercept(){return gMriver_intercept_.expression();};
 	double gMriver_f_intercept(){return gMriver_f_intercept_.expression();};
 
@@ -64,8 +64,8 @@ public:
 	double pG_sea(){return gG_sea_.phenotype();};
 	double pSLmid(){return gSLmid_.phenotype();};
 	double pSalphaS(){return gSalphaS_.phenotype();};
-	double pMocean_intercept(){return gMocean_intercept_.phenotype();};
-	double pMocean_f_intercept(){return gMocean_f_intercept_.phenotype();};
+	double pMocean_intercept(){return gMocean_intercept_.phenotype();};  // TODO: use genetic expression + envVar
+	double pMocean_f_intercept(){return gMocean_f_intercept_.phenotype();}; //TODO: idem
 	double pMriver_intercept(){return gMriver_intercept_.phenotype();};
 	double pMriver_f_intercept(){return gMriver_f_intercept_.phenotype();};
 

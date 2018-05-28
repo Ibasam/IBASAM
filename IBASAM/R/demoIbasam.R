@@ -27,7 +27,11 @@ function (nYears, CC_Temp, CC_Amp, fisheries= TRUE, plotting = TRUE, window = FA
     summerM <- matrix(NA, nrow = nYears, ncol = 18)
     ally <- summarize.oneyear(popo, popa)
     sptm <- NULL
+    
+    pb   <- txtProgressBar(1, nYears, style=3) # initilazing progress bar
     for (y in 1:nYears) {
+      #cat("Year: ",y,"of ",nYears, "\n")
+        setTxtProgressBar(pb, y) # progress bar
         ptm <- proc.time()
         spring()
         summer()
