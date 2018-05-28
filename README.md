@@ -1,49 +1,20 @@
-         
-<img width="630" alt="ibasam" src="https://user-images.githubusercontent.com/14179200/33024686-0efb54d8-ce0c-11e7-957f-a956b12cbcf7.png">
-       
- 
-- **What is IBASAM?**
+
+# What is IBASAM?
 
 IBASAM (Individual Based Atlantic Salmon Model) is an individual-based demo-genetic model developed to simulate S. salar population dynamics in southern European populations.
 
-
-- **How does IBASAM work?**
-
-IBASAM is made of 8 submodels representing fundamental biological processes :
-1. Reproduction and reddcreation
-2. Emergence from the redds and individual birth
-3. Genetic coding and transmission
-4. Growth
-5. Survival
-6. Smoltification
-7. Maturation
-8. Migrations
-
-It also includes 2 environmental submodels :  
-10. River climate (Water temperature and flow)
-11. Ocean climate
-
-For the sake of conciseness, all submodels are not extensively justified here. Please see [Wiki](https://github.com/Ibasam/IBASAM/wiki) and Piou et al. (2012) for further explanations and graphics of some of the mathematical functions used.
-
-- **How to use IBASAM?**
-
-The IBASAM model was developed in C++ and interfaced as a shared library for R (R Development Core, 2010) to make easy the statistical analyses of model outputs. The C++ source codes and R scripts to create and use the model as R package are available online on Github. More detailed explanations are provided in the [Wiki](https://github.com/Ibasam/IBASAM/wiki).
-
-[Installation procedure](docs/installation.md)
-
-- **What is IBASAM’ goal?**
-
 IBASAM is a cohesive and novel tool to assess the effect of potential stressors on evolutionary demography of Atlantic salmon. It includes a demo-genetic structure coupled with the explicit representation of individual variability and complex life histories.
 
-- **How to contribute to IBASAM?**  
+More detailed explanations (processes, installation procedure,...), are provided in the [Wiki](https://github.com/Ibasam/IBASAM/wiki).
 
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+# Contributors
+[Cyril Piou](http://agents.cirad.fr/index.php/cyril.piou) (CIRAD, CBGP, Montpellier).  
+[Mathieu Buoro](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle).   
+[Etienne Prévost](https://ecobiop.com/a-propos/) (INRA, Ecobiop, St Pée s/ Nivelle).  
+[Julien Papaïx](https://informatique-mia.inra.fr/biosp/trombinoscope) (INRA, Biosp, Avignon).  
 
-
-
-[Contents of the folder](docs/contents.md)
-
-
+# Sponsor
+This work is financed under the [AFB](https://www.afbiodiversite.fr)-INRA conventions. 
 
 References  
 =============================================
